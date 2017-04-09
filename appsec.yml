@@ -1,0 +1,19 @@
+version: 0.0
+os: linux
+files:
+  - source: Code
+    destination: Code
+  - source: Assets
+    destination: Assets 
+hooks:
+  BeforeInstall:
+    - location: Assets/scripts/install_dependencies
+      timeout: 300
+      runas: root
+    - location: Assets/scripts/start_server
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: Assets/scripts/stop_server
+      timeout: 300
+      runas: root
