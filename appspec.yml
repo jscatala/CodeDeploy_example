@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: Code
-    destination: Code
+    destination: /home/ubuntu/Code
   - source: Assets
-    destination: Assets 
+    destination: /home/ubuntu/Assets 
 hooks:
   BeforeInstall:
     - location: Assets/scripts/install_dependencies
