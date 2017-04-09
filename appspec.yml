@@ -7,13 +7,13 @@ files:
     destination: /home/ubuntu/Assets 
 hooks:
   BeforeInstall:
-    - location: Assets/scripts/install_dependencies
+    - location: Assets/scripts/install_dependencies.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: Assets/scripts/install_app
+    - location: Assets/scripts/install_app.sh
       timeout: 300
   ApplicationStop:
-    - location: Assets/scripts/stop_server
+    - location: Assets/scripts/stop_server.sh
       timeout: 300
       runas: root
