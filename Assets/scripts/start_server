@@ -1,0 +1,7 @@
+cp $HOME/Assets/gunicorn.conf /etc/systemd/system/auditoria.service
+systemctl start auditoria
+systemctl enable auditoria
+apt-get install nginx -y
+ln -s $HOME/Assets/auditoria_nginx.conf /etc/nginx/sites-enabled
+nginx -t
+systemctl restart nginx
