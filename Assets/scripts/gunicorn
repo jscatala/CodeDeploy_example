@@ -1,0 +1,1 @@
+cp /home/ubuntu/Assets/gunicorn.conf /etc/systemd/system/example.service

@@ -12,7 +12,10 @@ hooks:
       runas: root
     - location: Assets/scripts/config_pip
       timeout: 300
-    - location: Assets/scripts/start_server
+  Install:
+    - location: Assets/scripts/install_app
+      timeout: 300
+    - location: Assets/scripts/gunicorn
       timeout: 300
       runas: root
   ApplicationStop:
