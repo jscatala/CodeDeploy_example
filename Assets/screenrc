@@ -1,0 +1,12 @@
+startup_message off
+term xterm-color
+altscreen on
+#term screen-256color
+bind ',' prev
+bind '.' next
+
+shell -$SHELL
+
+## Linea de status para informacion ( hosts, screens, hora)
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]'
