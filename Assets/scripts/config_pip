@@ -2,4 +2,3 @@ virtualenv $HOME/.venvs/CODE_DEPLOY_EX
 cd $HOME/.venvs/CODE_DEPLOY_EX
 bin/pip uninstall -y appdirs
 bin/pip install setuptools
-bin/pip install -r $HOME/Assets/requirements.txt
