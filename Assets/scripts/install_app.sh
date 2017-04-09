@@ -11,9 +11,9 @@ sudo cp /home/ubuntu/Assets/gunicorn.conf /etc/systemd/system/example.service
 sudo systemctl start example 
 sudo systemctl enable example
 
-apt-get install nginx -y
-ln -s /home/ubuntu/Assets/example_nginx.conf /etc/nginx/sites-enabled
-nginx -t
-systemctl restart nginx
+sudo apt-get install nginx -y
+sudo ln -s /home/ubuntu/Assets/example_nginx.conf /etc/nginx/sites-enabled
+sudo nginx -t
+sudo systemctl restart nginx
 
 date > $HOME/install_executed.txt
