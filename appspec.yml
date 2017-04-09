@@ -13,6 +13,7 @@ hooks:
   AfterInstall:
     - location: Assets/scripts/install_app.sh
       timeout: 300
+      runas: ubuntu
   ApplicationStop:
     - location: Assets/scripts/stop_server.sh
       timeout: 300
