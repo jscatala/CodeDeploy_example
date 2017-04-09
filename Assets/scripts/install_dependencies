@@ -1,3 +1,4 @@
+#!/bin/bash
 apt-get update
 apt-get upgrade -y
 apt-get install ccze screen unzip -y

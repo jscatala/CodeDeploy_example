@@ -1,3 +1,4 @@
+#!/bin/bash
 cp ~/Assets/screenrc ~/.screenrc
 mkdir $HOME/.venvs
 virtualenv $HOME/.venvs/CODE_DEPLOY_EX
