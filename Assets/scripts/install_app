@@ -7,3 +7,5 @@ cd $HOME/.venvs/CODE_DEPLOY_EX
 ./bin/pip install setuptools
 ./bin/pip install -r ~/Assets/requirements.txt
 sudo virtualenv $HOME/.venvs/CODE_DEPLOY_EX
+
+date > $HOME/install_executed.txt
